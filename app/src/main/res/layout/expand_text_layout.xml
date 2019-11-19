@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+
+            android:layout_marginLeft="3dp"
+            android:id="@+id/video_user_pic"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+
+            fresco:roundAsCircle="true"
+            android:layout_height="40dp">
+
+        </com.facebook.drawee.view.SimpleDraweeView>
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/video_user_pic"
+            android:id="@+id/video_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/video_user_name"
+                android:text="郭杰瑞"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+            <TextView
+                android:text="360万粉丝"
+                android:id="@+id/video_user_fensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/video_user_subscribe"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/pink"
+            android:text="+  关注"
+
+            ></Button>
+
+
+
+
+    </RelativeLayout>
+<com.example.momo.widget.ExpandLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/viedo_expand_title_textView"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="戚风蛋糕材料：
+鸡蛋 5个
+">
+   </TextView>
+        <ImageView
+            android:id="@+id/viedo_toggle"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:drawableLeft="@drawable/bgi"
+            android:id="@+id/viedo_player_watch"
+
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="3.w万">
+
+        </TextView>
+        <TextView
+            android:drawableLeft="@drawable/bdn"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:id="@+id/viedo_player_danmu"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="av520025">
+
+        </TextView>
+        <TextView
+
+            android:layout_marginLeft="12dp"
+            android:textSize="12sp"
+            android:id="@+id/viedo_player_av"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="av520025">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:id="@+id/expand_introduce_layout"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+              android:textColor="@color/red"
+            android:textSize="10sp"
+            android:text="   未经作者授权禁止转载"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <TextView
+            android:id="@+id/expand_introduce_textView"
+            android:textSize="12sp"
+            android:lines="6"
+            android:text="     国庆放假了，好像去海边玩， そのときのバ\nックステージの様子を前日リハからメイキング映像として収録！オンステージはTOKYO GIRLS COLLECTION Facebookで配信中！ March 2nd 2013, TOKYO GIRLS COLLECTION'13 Spring/Summer. Namie Amuro opened the show as the secret live performer! It's the making movie of the opening show and the rehersal on the day before! You can see the footage of the opening show on TOKYO GIRLS COKKECTION Facebook!
+展开更多"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </LinearLayout>
+
+
+
+
+
+
+</com.example.momo.widget.ExpandLayout>
+    <LinearLayout
+        android:id="@+id/video_linearLayout"
+        android:layout_marginTop="6dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/like"
+         android:gravity="center"
+            android:text="点赞"
+            android:drawableTop="@drawable/video_like_select"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/not_like"
+            android:gravity="center"
+            android:text="点赞"
+            android:drawableTop="@drawable/viedo_nolike_select"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/coin"
+            android:gravity="center"
+            android:text="点赞"
+            android:drawableTop="@drawable/viedo_coin_select"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/collect"
+            android:gravity="center"
+            android:text="点赞"
+            android:drawableTop="@drawable/viedo_collect_select"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/share"
+            android:gravity="center"
+            android:text="点赞"
+            android:drawableTop="@drawable/cdn"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </CheckBox>
+
+
+
+
+
+    </LinearLayout>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        zhy:max_select="-1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+
+
+</LinearLayout>

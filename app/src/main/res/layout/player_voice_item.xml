@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:gravity="center"
+    android:id="@+id/voice_item"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/voice"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+       >
+
+
+    </ImageView>
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/voice_seekbar"
+        android:layout_width="160dp"
+
+        android:thumb="@drawable/thumb_seekbar"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatSeekBar>
+
+
+</LinearLayout>

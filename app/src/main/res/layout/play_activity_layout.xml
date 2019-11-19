@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/player_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/palyer_app_bar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+          <com.google.android.material.appbar.CollapsingToolbarLayout
+              android:id="@+id/palyer_collpasing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+                <com.example.momo.widget.Myplayer
+
+                    android:id="@+id/player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:controller_layout_id="@layout/control_view"
+
+                    >
+
+
+                </com.example.momo.widget.Myplayer>
+
+
+              <androidx.appcompat.widget.Toolbar
+                  android:id="@+id/palyer_tool_bar"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="#00665489"
+                  app:layout_collapseMode="pin"
+                  app:menu="@menu/toolbar_menu"
+
+
+                  app:navigationIcon="@drawable/bili_player_back_button">
+                   <LinearLayout
+                       android:id="@+id/player_icon_layout"
+                       android:gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent">
+
+
+                  <ImageView
+
+                      android:layout_width="wrap_content"
+
+                      android:layout_height="wrap_content"
+
+
+                      android:background="@drawable/ic_tv_play">
+
+                  </ImageView>
+                       <TextView
+                           android:layout_marginLeft="6dp"
+                           android:gravity="center"
+                           android:layout_width="wrap_content"
+                           android:text="立即播放"
+                           android:layout_height="match_parent">
+
+
+                       </TextView>
+
+                   </LinearLayout>
+              </androidx.appcompat.widget.Toolbar>
+
+
+
+
+          </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <LinearLayout
+                android:id="@+id/player_tab_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_weight="3"
+                    android:id="@+id/tab_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="?attr/actionBarSize"
+
+                    app:tabMode="scrollable"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="@color/white">
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_margin="8dp"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/bili_player_danmaku_is_open"
+                    android:background="@drawable/edit_shape"
+
+                    android:gravity="center"
+                    android:hint="发送弹幕"
+                    android:textSize="16sp">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/player_down_layout"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+
+            android:id="@+id/plaer_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <com.example.momo.widget.SmartViewPager
+
+                android:id="@+id/player_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </com.example.momo.widget.SmartViewPager>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+

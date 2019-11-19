@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/player_preview"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_02"
+        ></com.facebook.drawee.view.SimpleDraweeView>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ic_tv_play"
+        android:padding="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        ></com.facebook.drawee.view.SimpleDraweeView>
+
+</FrameLayout>

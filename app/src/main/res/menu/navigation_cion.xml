@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">>
+
+    <item
+
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/like"
+        android:icon="@drawable/ic_column_input_unlike"
+        android:title="@string/like"
+
+        />
+
+    <item
+
+        android:checkable="true"
+        android:id="@+id/not_like"
+        android:icon="@drawable/ci"
+        android:title="@string/unlike" />
+
+    <item
+        android:checkable="true"
+
+        app:showAsAction="ifRoom"
+        android:id="@+id/coin"
+        android:icon="@drawable/ic_coin"
+        android:title="@string/coin" />
+    <item
+        android:checkable="true"
+
+        app:showAsAction="ifRoom"
+        android:id="@+id/collect"
+        android:icon="@drawable/ic_collect_star"
+        android:title="@string/collect" />
+    <item
+        android:checkable="true"
+
+        app:showAsAction="ifRoom"
+        android:id="@+id/share"
+        android:icon="@drawable/ic_live_menu_share"
+        android:title="@string/share" />
+
+</menu>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+       <LinearLayout
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/all"
+                    android:layout_weight="1"
+            fresco:roundAsCircle="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          >
+
+        </com.facebook.drawee.view.SimpleDraweeView>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/guichu"
+                android:layout_weight="1"
+                fresco:roundAsCircle="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+              >
+
+            </com.facebook.drawee.view.SimpleDraweeView>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/vlog"
+                android:layout_weight="1"
+                fresco:roundAsCircle="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               >
+
+            </com.facebook.drawee.view.SimpleDraweeView>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/xuexi"
+                android:layout_weight="1"
+                fresco:roundAsCircle="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+           >
+
+            </com.facebook.drawee.view.SimpleDraweeView>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/lol"
+                android:layout_weight="1"
+                fresco:roundAsCircle="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               >
+
+            </com.facebook.drawee.view.SimpleDraweeView>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="全部赛事">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="鬼畜">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="vlog">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="学习">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="英雄联盟">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_marginTop="6dp"
+                android:background="@color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="16dp">
+
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="6dp"
+                android:text="全部分区(31)"
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:id="@+id/chanel_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+include ':app', ':webviewmoudle', ':mylibrary'
+rootProject.name='MOMO'
+gradle.ext.exoplayerRoot = settingsDir
+def modulePrefix = ':'
+if (gradle.ext.has('exoplayerModulePrefix')) {
+    modulePrefix += gradle.ext.exoplayerModulePrefix
+}

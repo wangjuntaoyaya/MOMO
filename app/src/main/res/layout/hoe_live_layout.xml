@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/zhuifan_refresh">
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/zhuifan_recycleview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+    <com.example.momo.widget.CircleIndicateLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        >
+
+
+
+    </com.example.momo.widget.CircleIndicateLayout>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat >

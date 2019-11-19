@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/controller_layout"
+    android:orientation="horizontal"
+    android:layout_weight="12"
+   android:gravity="center"
+
+    android:layout_height="?attr/actionBarSize">
+
+
+    <ImageView
+        android:id="@+id/paly"
+
+       android:layout_width="30dp"
+
+        android:background="@drawable/bili_player_play_can_pause"
+      android:layout_height="30dp">
+
+
+
+
+    </ImageView>
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:padding="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:id="@+id/progress_seekbar"
+    >
+
+
+
+    </androidx.appcompat.widget.AppCompatSeekBar>
+
+    <TextView
+        android:id="@+id/video_progress_ing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:textSize="12sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="02:57">
+
+
+    </TextView>
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/video_totoltime"
+        android:layout_weight="1"
+        android:text="/05:57"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+
+
+    </TextView>
+    <ImageView
+        android:id="@+id/video_zoom"
+        android:scaleType="fitXY"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_live_player_zoom_in"
+        ></ImageView>
+
+
+
+
+
+
+
+
+</LinearLayout>

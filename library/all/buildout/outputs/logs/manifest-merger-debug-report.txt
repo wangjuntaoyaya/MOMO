@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml:16:1-52
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml:16:1-52
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml:16:1-52
+	package
+		ADDED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml:16:11-50
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml:16:1-52
+uses-sdk
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+		ADDED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+		ADDED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml
+		INJECTED from I:\ExoPlayer-release-v2\library\all\src\main\AndroidManifest.xml

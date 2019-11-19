@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+    >
+    <com.example.momo.widget.AutoButton
+        android:layout_marginLeft="30dp"
+        auto:num_color="@color/background_dark"
+        auto:num_size="16"
+        android:layout_marginTop="200dp"
+        android:id="@+id/auto_btn"
+        android:text="跳过"
+        android:typeface="normal"
+         android:textSize="16sp"
+
+        android:textColor="@color/background_dark"
+            android:background="@drawable/auto_btn_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </com.example.momo.widget.AutoButton>
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:id="@+id/splash_image"
+    android:scaleType="fitCenter"
+    android:layout_height="match_parent">
+
+
+
+</ImageView>
+
+
+
+</FrameLayout>

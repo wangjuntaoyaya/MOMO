@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_height="wrap_content">
+ <include layout="@layout/item_viewpager"></include>
+
+    <RadioGroup
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:gravity="center"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/bzw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="番剧"
+        android:button="@null">
+
+    </RadioButton>
+        <RadioButton
+android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bzy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国创"
+            android:button="@null">
+
+        </RadioButton>
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bzt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间表"
+            android:button="@null">
+
+        </RadioButton>
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bzu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="索引"
+            android:button="@null">
+
+        </RadioButton>
+        <RadioButton
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门榜单"
+            android:button="@null">
+
+        </RadioButton>
+
+    </RadioGroup>
+    <View
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/recycle_decoration_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="我的追番"
+            android:gravity="center"
+            android:layout_gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+        <TextView
+        android:text="更新7部"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:layout_gravity="right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+    </FrameLayout>
+  <androidx.recyclerview.widget.RecyclerView
+
+      android:id="@+id/zhuipan_horizontal_recyclerview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

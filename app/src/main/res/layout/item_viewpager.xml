@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+
+    xmlns:cc="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<com.example.momo.widget.MyHeadViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vp"
+
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="200dp">
+
+</com.example.momo.widget.MyHeadViewPager>
+
+
+ <com.example.momo.widget.CircleIndicateLayout
+     android:id="@+id/indicator_circle"
+     android:layout_width="60dp"
+     android:layout_gravity="right|bottom"
+     android:layout_height="16dp">
+
+
+
+ </com.example.momo.widget.CircleIndicateLayout>
+</FrameLayout>

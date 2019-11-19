@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">>
+
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home"
+        android:title="@string/home"
+
+        />
+
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_channel"
+        android:icon="@drawable/tabbar_discover"
+        android:title="@string/chanel" />
+
+    <item
+
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/tabbar_message_center"
+        android:title="@string/meesage" />
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_vip"
+        android:icon="@drawable/tabbar_profile"
+        android:title="@string/maivip" />
+
+</menu>

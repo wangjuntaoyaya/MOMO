@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="#00ffffff"
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_shape"
+android:textSize="12sp"
+                android:gravity="center"
+                android:paddingLeft="130dp"
+                android:paddingRight="160dp"
+                 android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/bfq"
+
+                android:hint="搜索相关内容">
+
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+            <RadioGroup
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip01"
+                    android:gravity="center"
+                    android:text="@string/shouban">
+
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip02"
+                    android:gravity="center"
+                    android:text="@string/zhoubian">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip03"
+                    android:gravity="center"
+                    android:text="@string/manzan">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip004"
+                    android:gravity="center"
+                    android:text="@string/ouqi">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="6dp"
+                android:id="@+id/vip_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip05"
+                    android:gravity="center"
+                    android:text="@string/chaowan">
+
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip06"
+                    android:gravity="center"
+                    android:text="@string/niudan">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip07"
+                    android:gravity="center"
+                    android:text="@string/yanchu">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_vip08"
+                    android:gravity="center"
+                    android:text="@string/all_collect">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/background_dark"
+                    android:background="@drawable/clicke_selector"
+                    android:id="@+id/shop_text01"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/b9h"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="20dp"
+                    android:text="jinrishangxing">
+
+                </TextView>
+
+                <TextView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/background_dark"
+                    android:background="@drawable/shop_tv_shape"
+                    android:id="@+id/shop_text02"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:drawableRight="@drawable/bdw"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="shiqu">
+
+                </TextView>
+
+                <TextView
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/background_dark"
+                    android:background="@drawable/shop_tv_shape"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/shop_text03"
+                    android:drawableRight="@drawable/bdx"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panhang">
+
+                </TextView>
+
+            </LinearLayout>
+       <include layout="@layout/item_viewpager"
+           android:layout_width="match_parent"
+           android:layout_height="160dp"
+
+           ></include>
+
+
+        </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/shop_tab"
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize">
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+
+<com.example.momo.widget.SmartViewPager
+    android:id="@+id/shop_baobu_vp"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+
+</com.example.momo.widget.SmartViewPager>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

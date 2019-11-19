@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+          android:background="@drawable/edit_shape"
+    android:id="@+id/item_text"
+    android:layout_marginLeft="9dp"
+    android:layout_marginTop="3dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:padding="2dp"
+    android:clickable="true"
+    android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
